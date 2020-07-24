@@ -12,15 +12,15 @@ module.exports = {
         }
         if (!hasKafka) {
             // remove filers from template related only to Kafka
-            fs.unlinkSync(path.resolve(generator.targetDir, 'src/test/java/com/asyncapi/SimpleKafkaTest.java'));
-            fs.unlinkSync(path.resolve(generator.targetDir, 'src/test/java/com/asyncapi/TestcontainerKafkaTest.java'));
+            // fs.unlinkSync(path.resolve(generator.targetDir, 'src/test/java/com/asyncapi/SimpleKafkaTest.java'));
+            // fs.unlinkSync(path.resolve(generator.targetDir, 'src/test/java/com/asyncapi/TestcontainerKafkaTest.java'));
         }
         if (!hasAmqp) {
             // remove filers from template related only to amqp
         }
         if (!hasMqtt) {
             // remove filers from template related only to mqtt
-            fs.unlinkSync(path.resolve(generator.targetDir, 'src/test/java/com/asyncapi/TestcontainerMqttTest.java'));
+            // fs.unlinkSync(path.resolve(generator.targetDir, 'src/test/java/com/asyncapi/TestcontainerMqttTest.java'));
         }
     }
 };
